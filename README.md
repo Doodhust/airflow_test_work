@@ -26,9 +26,13 @@ http://localhost:8080
 ## Проверить что данные загружаются, можно подключиться к clickhouse, например через dbeaver
 
 Хост: localhost
+
 Схема: default
+
 Порт: 8123
+
 Пользователь: clickhouse_user
+
 Пароль: clickhouse_password
 
 ![Таблица fraud_alerts](images/fraud_alerts.png)
