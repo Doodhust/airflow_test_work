@@ -33,3 +33,5 @@ http://localhost:8080
 
 ![Таблица fraud_alerts](images/fraud_alerts.png)
 
+![Запрос Топ-5 кампаний по CTR за последние 30 минут](images/top5_campaigns.png)
+
