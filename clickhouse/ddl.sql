@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS layers;
+CREATE DATABASE IF NOT EXISTS default;
 
-CREATE TABLE IF NOT EXISTS layers.raw_impressions
+CREATE TABLE IF NOT EXISTS default.raw_impressions
 (
     req_id String,
     user_id Int32,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS layers.raw_impressions
 ) ENGINE = MergeTree()
 ORDER BY (ts, req_id);
 
-CREATE TABLE IF NOT EXISTS layers.raw_clicks
+CREATE TABLE IF NOT EXISTS default.raw_clicks
 (
     req_id String,
     user_id Int32,
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS layers.raw_clicks
 ORDER BY (ts, req_id);
 
 -- Таблица фрод-алертов
-CREATE TABLE IF NOT EXISTS layers.fraud_alerts
+CREATE TABLE IF NOT EXISTS default.fraud_alerts
 (
     ts DateTime,
     ip String,
